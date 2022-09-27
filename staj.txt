@@ -1,0 +1,504 @@
+Başıca veri tipleri örn:
+Byte:tam sayı tanımlamak 1 byte yer kaplar
+Short:   “     “          “                 2 byte   “      “
+İnt:       “      “            “               4 byte   “      “                                     int sayi=7;
+Long: Ondalık “         “       “   2 byte   “      “
+                                                                               >long ve float arasındaki fark long                    daha büyük ondalık tutulur float da daha az tutulur.
+Float:     “          “         “       “   8 byte   “      “ 
+Double: “         “           “       “   4 byte  “      “                       double ondalik_sayi=3.5;
+Blooen:2 alternatif olduğu veri tipi. 2 byte “     “                                   
+Char:Tek karakter atayan veri tipidir
+String:Metin değeri tutabilenn veri tipidir                 string isim=”Yagiz”;       
+
+
+--------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace staj
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            byte yagiz = 7;
+            byte hira = 72; //byte değeri en fazla 255 en az 0 değeri alır.
+            //byte maxDeger = byte.MaxValue;
+            //byte minDeger = byte.MinValue;
+            Console.WriteLine(yagiz);
+            Console.WriteLine(hira);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+--------------------------------------------------------------
+        static void Main(string[] args)
+        {
+            short birinci = -10;
+            short ikinci = 12;
+            short maxShortDegeri = short.MaxValue;
+            short minShortDegeri = short.MinValue;
+
+            Console.WriteLine("Birinci degisken: " + birinci);
+            Console.WriteLine("Ikinci degisken: " + ikinci);
+            Console.WriteLine("Maksimum deger: " + maxShortDegeri);
+            Console.WriteLine("Minimum deger: " + minShortDegeri);
+            Console.ReadLine();
+        }
+--------------------------------------------------------------
+static void Main(string[] args)
+      {
+          int birinci = -7286954;
+          int ikinci = 728659341;
+          int maxIntDegeri = int.MaxValue;
+          int minIntDegeri = int.MinValue;
+ 
+          Console.WriteLine("Birinci : " + birinci);
+          Console.WriteLine("Ikinci : " + ikinci);
+          Console.WriteLine("Maksimum deger: " + maxIntDegeri);
+          Console.WriteLine("Minimum deger: " + minIntDegeri);
+          Console.ReadLine();
+      }
+
+--------------------------------------------------------------
+  static void Main(string[] args)
+        {
+            long birinci = -728654887722;
+            long ikinci = 8725614345;
+            long maxLongDegeri = long.MaxValue;
+            long minLongDegeri = long.MinValue;
+
+            Console.WriteLine("Birinci : " + birinci);
+            Console.WriteLine("Ikinci : " + ikinci);
+            Console.WriteLine("Maksimum deger: " + maxLongDegeri);
+            Console.WriteLine("Minimum deger: " + minLongDegeri);
+            Console.ReadLine();
+        }
+--------------------------------------------------------------
+static void Main(string[] args)
+       {
+           float birinci = 728.72f;
+           float ikinci = -82736;
+           float maxFloatDegeri = float.MaxValue;
+           float minFloatDegeri = float.MinValue;
+ 
+// örn  1-float ondalikliSayi= 72.82f;
+         2-float tamSayi = 7286;
+
+           Console.WriteLine("Birinci degisken: " + birinci);
+           Console.WriteLine("Ikinci degisken: " + ikinci);
+           Console.WriteLine("Maksimum deger: " + maxFloatDegeri);
+           Console.WriteLine("Minimum deger: " + minFloatDegeri);
+           Console.ReadLine();
+       }
+--------------------------------------------------------------
+static void Main(string[] args)
+       {
+          double birinci = 728.72;
+            double ikinci = -82736;
+            double maxDoubleDegeri = double.MaxValue;
+            double minDoubleDegeri = double.MinValue;
+
+            Console.WriteLine("Birinci : " + birinci);
+            Console.WriteLine("Ikinci : " + ikinci);
+            Console.WriteLine("Maksimum deger: " + maxDoubleDegeri);
+            Console.WriteLine("Minimum deger: " + minDoubleDegeri);
+            Console.ReadLine();
+
+       }
+--------------------------------------------------------------
+static void Main(string[] args)
+       {
+           char harf1 = 'Y';
+           char harf2 ='\x0077';
+           char harf3 = (char)28;
+ 
+           Console.WriteLine(harf1);
+           Console.WriteLine(harf2);
+           Console.WriteLine(harf3);
+Console.ReadLine();
+ 
+       }
+--------------------------------------------------------------
+static void Main(string[] args)
+       {
+           bool dogru = true;
+           bool yanlis = false;
+           int sayi = 5;
+            
+           // sayi degiskenine atadigimiz deger 10dan buyuk mu kontrol ediliyor.
+           bool sonuc = sayi > 10; 
+           //sayi 10dan kucuk oldugu icin yanlis (false) sonucu donmekte.
+ 
+           Console.WriteLine(dogru);
+           Console.WriteLine(yanlis);
+           Console.WriteLine(sonuc);
+       }
+--------------------------------------------------------------
+using System;
+
+namespace Operator
+{
+	class AssignmentOperator
+	{
+		public static void Main(string[] args)
+		{
+			int birnumara, ikinumara;
+			// Assigning a constant to variable
+			birnumara = 10;
+			Console.WriteLine("İlk numara = {0}", birnumara);
+
+			// Assigning a variable to another variable
+			nikinumara = birnumara;
+			Console.WriteLine("İkinci numara = {0}", ikinumara);
+		}
+	}
+}
+
+--------------------------------------------------------------
+
+ using System;
+ class Operatorler
+ {
+ 	static void Main()
+ 	{
+ 		int a=5;
+ 		int i=++a;
+ 		Console.Write(i+" "+a);
+ 	}
+ }
+--------------------------------------------------------------
+using System;
+ class Operatorler
+ {
+ 	static void Main()
+ 	{
+ 		int i=3*5/7;
+ 		Console.Write(i);
+ 	}
+ }
+----------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi1 = 3;
+            int sayi2 = 5;
+            Console.WriteLine("Sayı 1 değeri : {0}", sayi1);
+                 
+            Console.WriteLine("Prefix Kullanarak sayımızın son değeri : {0}", ++sayi1);
+            
+            Console.WriteLine("Postfix kullanarak sayımızın son değeri : {0}", sayi1++);
+          
+            Console.WriteLine("Sayı 1 son değeri : {0}", sayi1);
+ 
+            Console.WriteLine();
+            Console.WriteLine("********************************");
+            Console.WriteLine();
+ 
+          
+            Console.WriteLine("Sayı 2 değeri : {0}", sayi2);
+         
+            Console.WriteLine("Prefix kullanarak sayımızın son değeri : {0}", --sayi2);
+        
+            Console.WriteLine("Postfix kullanarak sayımızın son değeri : {0}", sayi2--);
+        
+            Console.WriteLine("Sayı 2 son değeri : {0}", sayi2);
+ 
+            Console.ReadLine();
+        }
+    }
+}
+-------------------------------------------------------------------------------------------
+int a = 1 + 2 + 3;
+int b = 6;
+Console.WriteLine(a == b);  
+
+char c1 = 'a';
+char c2 = 'A';
+Console.WriteLine(c1 == c2);  
+Console.WriteLine(c1 == char.ToLower(c2));  
+------------------------------------------------------------------------------------------
+static void Main(string[] args)
+{
+    Console.WriteLine("Adınızı Giriniz: ");
+    string ad = Console.ReadLine();
+    Console.Write("BMW///M Power'a Hoşgeldin " + ad);
+    Console.ReadLine();
+}
+------------------------------------------------------------------------------------------
+lass TurDonusumu
+{
+   static void Main()
+   {
+      byte a=5;
+      short b=10;
+      sbyte c=30;
+      int d=a+b+c;
+      string e="deneme";
+      char f='k';
+      object g=e+f+d;
+      long h=d;
+      float i=h;
+      double j=i;
+      double k=12.5f;
+      Console.WriteLine(j+k);
+   }
+}
+-----------------------------------------------------------------------------------------
+nt a = 10;
+         if (a < 20) {
+            Console.WriteLine("a 20 den küçüktür");
+         }
+---------
+int yas = 17;
+         if (yas >= 18) {
+            Console.WriteLine("18 yaşına eşit yada büyük olduğu için ...");
+         }else{
+             Console.WriteLine("18 yaşından küçüktür ve izinler sağlanamamıştır");
+         }
+----------
+float universite_bitirme_notu = 2.30;
+int ogrenci_durumu;
+         if (universite_bitirme_notu > 2) {
+            
+            ogrenci_durumu = 1;
+            if (universite_bitirme_notu > 3) {
+               
+               ogrenci_durumu = 2;
+            }
+         }
+----------
+int yas = 15;
+
+if (yas < 3)
+{
+    Console.WriteLine('bebek');
+}
+else if (yas < 10)
+{
+    Console.WriteLine('çocuk');
+}
+else if (yas < 18)
+{
+    Console.WriteLine('ergen');
+}
+else
+{
+    Console.WriteLine('yetişkin');
+}
+-----------
+string form_uzerinden_gelecek_isim;
+
+switch(form_uzerinden_gelecek_isim) {
+   case "emre"  :
+      
+      break;
+   case "tuğçe"  :
+      
+      break;
+   default : /* Hiçbir case karşılamıyorsa buraya gelir */
+}
+-----------------------------------------------------------------------------
+static void Main(string[] args)
+       {
+           Console.Write("sevdiğiniz araba modeli: ");
+           string takimKodu = Console.ReadLine().ToLower();
+ 
+           switch (arabaKodu)
+           {
+               case "bmw":
+                   Console.WriteLine("BMW");
+                   break;
+ 
+               case "minicopper":
+                   Console.WriteLine("MİNİCOPPER");
+                   break;
+ 
+               case "rolls royce":
+                   Console.WriteLine("ROLLS ROYCE");
+                   break;
+ 
+               case "honda":
+                   Console.WriteLine("HONDA");
+                   break;
+ 
+               case "m motorsport":
+                   Console.WriteLine("///M MOTORSPORT");
+                   break;
+               default:
+                   Console.WriteLine("Öyle bir araç yok sadece BMW!");
+                   break;
+           }
+       }
+----------------------------------------------------------------------------
+int toplam = 0, a, b;
+
+Console.WriteLine("bir sayi girin");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("bir sayi girin");
+b = Convert.ToInt32(Console.ReadLine());
+for (int i = a; i <= b; i++)
+{
+    toplam += i;
+}
+Console.WriteLine("Toplam : {0}", toplam);
+----------------------------------------------------------------------------
+static void Main(string[] args)
+  {
+      Console.Write("Başlangıç değerini giriniz: ");
+      int baslangic = int.Parse(Console.ReadLine());
+      Console.Write("Bitiş değerini giriniz: ");
+      int bitis = int.Parse(Console.ReadLine());
+      Console.Write("Artış miktarı giriniz: ");
+      int artis = int.Parse(Console.ReadLine());
+ 
+      Console.WriteLine(baslangic + " ve " + bitis + " arasındaki sayılar; ");
+      for (int sayac = baslangic; sayac<= bitis; sayac += artis)
+      {
+          Console.WriteLine(sayac);
+      }
+  }
+-----------------------------------------------------------------------------
+for( int i = 1 ; i <= 10 ; i++ )
+{
+for (int j = 1 ; j <= i ; j++ )
+{
+label1.Text += i.ToString();
+}
+
+label1.Text += "\n";
+}
+-----------------------------------------------------------------------------
+char i = "Z";
+
+while (i>"A")
+{
+ Console.WriteLine(i);
+ i--;
+}
+
+Console.ReadLine();
+-----------------------------------------------------------------------------
+
+for (int sayi = 1; sayi <= 20; sayi++)
+            {
+                if (sayi == 9) /* eğer sayı 9 olduysa*/
+                    continue;   /* devam et. 9 u yazma*/
+                Console.WriteLine("Sayı : {0}", sayi);
+            }
+ 
+            Console.ReadKey();
+----------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace çarpım_tablosu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1 den 10 a kadar olan sayıların çarpım tablosu oluşturma
+            for (int a = 1; a <= 10; a++)
+            {
+                for (int b = 1; b < 10; b++)
+                {
+                    Console.Write("{0}*{1}={2}      ", b, a, (b * a));
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+}
+---------------------------------------------------------------------------
+static void Main(string[] args)
+        {
+            int sayac = 0;
+            int[] sayilar = { 10,15,20,33,22,11,9,8,48,47,12,25,12,21 };
+            int toplam = 0;
+            foreach (int sayi in sayilar)
+            {
+                
+                if (sayi % 2 == 1)
+                {
+                    sayac++;
+                    Console.WriteLine(sayi);
+                }
+                    
+            }
+            Console.WriteLine("Tek sayı adeti= " + sayac);
+ 
+            Console.ReadKey();
+        }
+--------------------------------------------------------------------------
+        static void Main(string[] args)
+        {
+            int hak_sayisi = 3;
+            while (true)
+            {
+                Console.WriteLine("Kullanıcı Adınızı Giriniz");
+                string kullaniciAdi = Console.ReadLine();
+                Console.WriteLine("Şifrenizi Giriniz");
+                string sifre = Console.ReadLine();
+                if (kullaniciAdi == "bmw" && sifre == "bmwm3")
+                {
+                    Console.WriteLine("Tebrikler, Başarılı bir şekilde giriş yaptınız...");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Hatalı Kullanıcı Adınız veya Şifre ile giriş yaptınız...");
+                    if (hak_sayisi > 0)
+                    {
+                        hak_sayisi -= 1;
+                    }
+                    if (hak_sayisi == 0)
+                    {
+                        Console.WriteLine("Giriş hakkınız dolmuştur. Giriş Yapamazsınız!");
+                        break;
+                    }
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
+--------------------------------------------------------------------------
+string[] sehirler = new string[3];
+for (int i = 0; i < sehirler.Length; i++)
+{
+Console.Write("Şehir Adını girin: ");
+sehirler[i] = Console.ReadLine();
+}
+ 
+Console.Write("Listelemek istediğiniz şehrin baş harfini girin: ");
+char harf = Convert.ToChar(Console.ReadLine());
+ 
+foreach (string sehir in sehirler)
+{
+ 
+if (sehir[0] == harf)
+{
+Console.WriteLine(sehir);
+}
+}
+ 
+Console.ReadKey();
+-----------------------------------------------------------------------------
